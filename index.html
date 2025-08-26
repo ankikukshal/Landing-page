@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/tut21.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+<link href="./fitness gym_files/css2" rel="stylesheet"></head>
+
+<body>"
+<link rel="stylesheet" href="./fitness gym_files/style.css">
+<style>
+    /* css reset*/
+    body{
+        color: white;
+        margin:0px;
+        padding: 0px;
+        background:url('https://cdn.pixabay.com/photo/2016/11/22/22/25/abs-1850926_1280.jpg');
+        
+    }
+    .mid{
+       display: block;
+       width: 50%;
+       margin: 12px auto;
+       /*border: 2px solid black;*/
+    }
+    .right{
+        display: inline-block;
+       /* border : 2px solid rgb(9, 187, 68);*/
+        position: absolute;
+        right: 34px;
+        top:10px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding:70px 24px
+    }
+    .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: white;
+
+    }
+    .btn{
+        margin: 0px;
+        background-color: black;
+        color: white;
+        padding: 4x 14px;
+        border: 2px solid grey;
+       /* border-radius:10px ;*/
+        font-size: 15px;
+        cursor: pointer;
+
+
+    }
+    .btn:hover{
+        background-color: black;
+         text-decoration: underline;
+    
+    }
+    .container{
+        border: 2px solid whitesmoke;
+        margin: 108px 700px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        border-style:double;
+        
+    }
+
+    .form-group input{
+        text-align: center;
+        display:block;
+        width:300px;
+        padding:1px;
+        border:6px solid black;
+        margin:4px auto;
+        /*fontsize:500px;
+        borderradius:10px;*/
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+      display: block;
+      width: 74%;
+      margin: 2px auto;
+      
+
+    }
+    
+   
+</style>
+
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5500/tut21.html#" class="active">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/tut21.html#">About Us</a></li>
+                <li><a href="http://127.0.0.1:5500/tut21.html#">Fitness Calculator</a></li>
+                <li><a href="http://127.0.0.1:5500/tut21.html#">Contact Us</a></li>
+               </ul>
+        </div>
+        
+        <!--right box for buttons-->
+        <div class="right">
+       <button class="btn">Call Us Now</button>
+       <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1><b>Join the best gym of Delhi now</b></h1>
+        <form action="http://127.0.0.1:5500/nonaction.php">
+             <div class="form-group">
+             <input type="text" name="" placeholder="Enter your name">
+            </div>
+             <div class="form-group">
+             <input type="text" name="" placeholder="Enter your age">
+             </div>
+             <div class="form-group">
+             <input type="text" name="" placeholder="Enter your Gender">
+             </div>
+             <div class="form-group">
+
+             <input type="text" name="" placeholder="Enter your Address">
+             </div>
+             <div class="form-group">
+
+                <input type="text" name="" placeholder="Enter your Email Id">
+                </div>
+                <div class="form-group">
+
+                    <input type="text" name="" placeholder="Enter your Phone Number">
+                    </div>
+             <button class="btn">submit</button>
+             
+             
+        </form>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
